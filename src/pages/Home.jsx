@@ -1,12 +1,17 @@
-import Resume from "../assets/Resume.pdf";
-import Hero from "../assets/herosec.png";
+import Resume from '../assets/Resume.pdf';
+import Hero from '../assets/herosec.png';
+import HeroImg from '../assets/hero-img/3D_animation_phone_transaction.png';
 
 function Home() {
   return (
     <div className="text-center pt-6 md:pt-8 px-4 overflow-hidden">
       <div className="max-w-xl sm:max-w-lg md:max-w-2xl  mx-auto">
         {/* Hero Image */}
-        <img src={Hero} alt="Hero section" className="w-full h-96 md:h-auto" />
+        <img
+          src={HeroImg}
+          alt="Hero section"
+          className="w-full h-96 md:h-auto"
+        />
       </div>
       {/* Resume Button */}
       <a href={Resume} download>
