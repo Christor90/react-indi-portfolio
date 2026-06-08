@@ -4,60 +4,60 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaGitAlt,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 import {
   SiJavascript,
   SiMongodb,
   SiExpress,
   SiTailwindcss,
-} from "react-icons/si";
+} from 'react-icons/si';
 
 export default function SkillsOrbit() {
   const skills = [
     {
       icon: <FaReact className="text-sky-400" />,
-      name: "React",
-      desc: "Component based UI with hooks.",
+      name: 'React',
+      desc: 'Component based UI with hooks.',
     },
     {
       icon: <SiJavascript className="text-yellow-400" />,
-      name: "JavaScript",
-      desc: "Core language for modern web.",
+      name: 'JavaScript',
+      desc: 'Core language for modern web.',
     },
     {
       icon: <FaNodeJs className="text-green-500" />,
-      name: "Node.js",
-      desc: "Backend runtime for APIs.",
+      name: 'Node.js',
+      desc: 'Backend runtime for APIs.',
     },
     {
       icon: <SiExpress className="text-gray-600" />,
-      name: "Express",
-      desc: "Fast backend framework.",
+      name: 'Express',
+      desc: 'Fast backend framework.',
     },
     {
       icon: <SiMongodb className="text-green-600" />,
-      name: "MongoDB",
-      desc: "NoSQL database.",
+      name: 'MongoDB',
+      desc: 'NoSQL database.',
     },
     {
       icon: <FaHtml5 className="text-orange-500" />,
-      name: "HTML",
-      desc: "Semantic webpage structure.",
+      name: 'HTML',
+      desc: 'Semantic webpage structure.',
     },
     {
       icon: <FaCss3Alt className="text-blue-500" />,
-      name: "CSS",
-      desc: "Layouts, animations and styling.",
+      name: 'CSS',
+      desc: 'Layouts, animations and styling.',
     },
     {
       icon: <SiTailwindcss className="text-cyan-400" />,
-      name: "Tailwind",
-      desc: "Utility-first CSS framework.",
+      name: 'Tailwind',
+      desc: 'Utility-first CSS framework.',
     },
     {
       icon: <FaGitAlt className="text-red-500" />,
-      name: "Git",
-      desc: "Version control system.",
+      name: 'Git',
+      desc: 'Version control system.',
     },
   ];
 
@@ -81,9 +81,9 @@ export default function SkillsOrbit() {
             const radiusDesktop = 200;
 
             const radius =
-              typeof window !== "undefined" && window.innerWidth < 640
+              typeof window !== 'undefined' && window.innerWidth < 640
                 ? radiusMobile
-                : typeof window !== "undefined" && window.innerWidth < 768
+                : typeof window !== 'undefined' && window.innerWidth < 768
                   ? radiusTablet
                   : radiusDesktop;
 
@@ -95,13 +95,13 @@ export default function SkillsOrbit() {
                 key={index}
                 className="group absolute"
                 style={{
-                  left: "50%",
-                  top: "50%",
+                  left: '50%',
+                  top: '50%',
                   transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
                 }}
               >
                 {/* Icon */}
-                <div className="text-2xl sm:text-3xl md:text-4xl bg-white shadow-lg p-3 sm:p-4 rounded-full hover:scale-125 transition">
+                <div className="text-2xl sm:text-3xl md:text-4xl bg-white shadow-lg p-3 sm:p-4 rounded-full hover:scale-125 transition cursor-pointer">
                   {skill.icon}
                 </div>
 
